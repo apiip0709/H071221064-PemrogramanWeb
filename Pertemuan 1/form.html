@@ -3,21 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrasi</title>
 </head>
 <body>
-    <table>
-        <form>
-        <tr>
-            <td><label for="name">Nama</label></td>
-            <td>: <input type="text" id="name"></td>
-        </tr>
-        <tr>
-            <td><label for="email">Email_peserta</label></td>
-            <td>: <input type="email" id="email"></td>
-        </tr>
+    <strong><h1>Formulir Pendaftaran</h1></strong><hr>
+    <form>
+        <h3>Biodata</h3>
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td><input type="text" id="nama" name="nama" autocomplete="off" required></td>
+            </tr>
+            <tr>
+                <td><label for="tempat">Tempat Lahir</label></td>
+                <td><input type="text" id="tempat" name="tempat" autocomplete="off" required></td>
+            </tr>
+            <tr>
+                <td><label for="tanggal">Tanggal lahir</label></td>
+                <td><input type="date" id="tanggal" name="tanggal" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" id="laki-laki" name="gender" value="Laki-laki" checked>
+                    <label for="laki-laki">Laki-laki</label>
+                    
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Kontak</h3>
+        <label for="alamat">Alamat</label><br>
+        <input type="text" id="alamat" name="alamat" autocomplete="off" required><br>
+
+        <label for="nomor">No. Telp</label><br>
+        <input type="number" id="nomor" name="nomor" placeholder="08XXXXXXXXXX" autocomplete="off" required><br>
+            
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="off" required>
+
+        <h3>Pendidikan</h3>
+        <label for="prodi">Prodi</label><br>
+        <input type="text" id="prodi" name="prodi" autocomplete="off" required><br>
+
+        <label for="fakultas">Fakultas</label><br>
+        <input type="text" id="fakultas" name="fakultas" autocomplete="off" required><br>
         
-        </form>
-    </table>
+        <label for="universitas">Universitas</label><br>
+        <input type="text" id="universitas" name="universitas" autocomplete="off" required><br><br>
+
+        <input type="button" value="Kembali" onclick="window.location.href='index.html'">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
