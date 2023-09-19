@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Bagian Navbar */
+header {
+    background-color: orange;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    padding: 20px;
+    top: 0;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    /* cursor: pointer; */
+}
+
+a:hover {
+    background-color: orangered;
+}
+
+/* Bagian Isi About dan Gallery */
+.content {
+    margin-top: 80px;
+}
+
+.desk {
+    display: flex;
+    text-align: justify;
+    margin: 20px auto; 
+    max-width: 600px; 
+    /* padding: 0 20px; */
+    /* align-items: center; */
+    /* white-space: normal; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 5px 10% 20px 10%;
+}
+
+.list-image {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.list-image img {
+    width: 100%; 
+    transition: 0.5s;
+    /* height: auto; */
+}
+
+.list-image:hover img {
+    transform: scale(1.2);
+}
+
+/* Bagian Footer */
+footer {
+    background-color: darkslategray;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    /* flex-direction: row; */
+    /* text-align: center; */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    /* justify-content: center; */
+}
+
+.logo img {
+    width: 40px;
+    margin-bottom: 10px;
+    /* height: auto; */
+}
+
+.contact p {
+    margin-right: 100px;
+    font-size: 15px;
+    /* margin-bottom: 0; */
+}
+
+/* Responsif: Ketika lebar layar kurang dari 900px */
+@media screen and (max-width: 900px) {
+    .desk {
+        margin: 20px 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .contact p {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .desk {
+        margin: 20px 130px;
+    }
+}
