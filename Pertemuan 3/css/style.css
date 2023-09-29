@@ -1,0 +1,27 @@
+nav {
+    background-color: #cccccc;
+}
+
+.caption {
+    position: absolute;
+    display: flex;
+    left: 10%;
+    top: 40%;
+    padding: 0;
+    text-align: center;
+}
+
+.caption h3 {
+    font-size: 3rem;
+    color: black;
+}
+
+footer {
+    background-color: #cccccc;
+}
+
+@media screen and (max-width: 765px) {
+    .caption {
+        display: none;
+    }
+}
