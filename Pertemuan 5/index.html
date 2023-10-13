@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack | Game Gacor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <i class='bx bx-money-withdraw' id="menu" onclick="showLogoutPopup()"></i>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>TOP UP</h2>
+        <p class="message">Top Up? Input Your Money</p>
+        <div class="buttons">
+            <input type="number" placeholder="How Much..." id="input-topup" class="input-topup">
+            <button id="submit" class="submit" >Submit</button>
+            <p id="result-topup"></p>
+        </div>
+        <span class="close" onclick="hidePopup()">&times;</span>
+    </div>
+    
+    <img src="img/Background.jpg" alt="" class="bg">
+
+    <h1 class="title">BlackJack</h1>
+    <h3>Play a Round?</h3>
+    <h3>Cards Left : <span id="cards-left"></span></h3>
+
+    <div class="table">
+        <div class="left">
+            <h4>Your Cards :</h4>
+            <div id="your-cards" class="your-cards">
+                <img class="hidden-card" src="./img/BACK.png" alt="">
+            </div>
+            <h4>Sums : <span id="your-sums"></span></h4>
+        </div>
+
+        <div class="right">
+            <h4>AI Cards :</h4>
+            <div id="ai-cards" class="ai-cards">
+                <img class="hidden-card" src="./img/BACK.png" alt="">
+            </div>
+            <h4>AI Sums : <span id="ai-sums"></span></h4>
+        </div>
+    </div>
+
+    <p id="result"></p>
+
+    <h4>Your money : Rp <span id="money-sums">50000</span></h4>
+    <input type="number" placeholder="Place your bet..." id="input-money" class="input-money">
+
+    <br>
+    <div class="btn">
+        <button id="btn-start">START GAME</button>
+        <button id="btn-take">Take a Card</button>
+        <button id="btn-hold">Hold Card</button>
+        <button id="btn-reset">Reset Card</button>
+    </div>
+
+    <script src="js/depoScript.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menuScript.js"></script>
+</body>
+
+</html>
