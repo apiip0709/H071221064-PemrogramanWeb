@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    margin: 4vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SideBar */
+.sidebar {
+    width: 25%;
+    border: apx solid #eee;
+    border-radius: 3px;
+    padding: 15px;
+    height: 92vh;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* SideBar Head */
+.sidehead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-circle {
+    color: orangered;
+}
+
+.fa-house {
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+
+.fa-house:hover {
+    color: orangered;
+}
+
+/* SideBar Body */
+.searchbar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input,
+.submit {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.submit:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+/* SideBar Footer */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    color: orangered;
+}
+
+/* Data Produk */
+.data {
+    width: 73%;
+    border-radius: 3px;
+    height: 92vh;
+    overflow-y: auto;
+}
+
+/* Judul Data */
+.header {
+    height: 150px;
+    border-radius: 3px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Konten Produk */
+.root {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.box {
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.img-box {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

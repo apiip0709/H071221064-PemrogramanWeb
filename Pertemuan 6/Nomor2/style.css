@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.box-card {
+    position: relative;
+    background-color: #f0efea;
+    border: 2px solid #3f4c52;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.input-box input:focus {
+    border: 2px solid #4fb6c7;
+}
+
+.baris {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.baris input {
+    height: 1rem;
+    width: auto;
+    margin: 0 5px;
+}
+
+.submit-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.submit-box .submit {
+    background-color: #4fb6c7;
+    border: 1px solid #5ad2e7;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-box .submit:hover {
+    background-color: #5ad2e7;
+}
+
+.result {
+    display: flex;
+    text-align: justify;
+    
+}

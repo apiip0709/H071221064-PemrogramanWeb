@@ -1,4 +1,4 @@
-function showLogoutPopup() {
+function showPopup() {
     document.getElementById('overlay').style.display = 'block';
     document.getElementById('popup').style.display = 'block';
 }
