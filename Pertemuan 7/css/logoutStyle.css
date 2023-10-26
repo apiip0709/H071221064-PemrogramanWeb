@@ -1,0 +1,77 @@
+.container-logout{
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logout{
+    background-image: url(https://img.freepik.com/free-vector/exit-icon-sign-vector-illustration_56104-2344.jpg?w=740&t=st=1698109746~exp=1698110346~hmac=377f0d2a6ec68ac74244f543024befeb5cecf64a9d121d33cb9fcc1ea4487eda);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #ff000d;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup .message {
+    margin-bottom: 20px;
+}
+
+.popup .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.popup .buttons button {
+    margin: 0 10px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.tombolmera{
+    padding: 10px;
+    background-color: #e00303;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tombolmera:hover{
+    background-color: #ff0505;
+}
